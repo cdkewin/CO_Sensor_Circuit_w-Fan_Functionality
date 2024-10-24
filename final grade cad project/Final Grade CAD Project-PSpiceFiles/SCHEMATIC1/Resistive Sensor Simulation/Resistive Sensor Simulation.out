@@ -1,0 +1,191 @@
+
+**** 05/23/24 07:28:46 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Resistive Sensor Simulation"  [ c:\users\lenovo\appdata\roaming\spb_data\cdssetup\workspace\projects\final g
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Resistive Sensor Simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Lenovo\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM Rs 20K 80K 1K 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FINAL GRADE CAD PROJECT
+.EXTERNAL OUTPUT Vcc
+R_R13         N36511 N36339  2.43K TC=0,0 
+R_R8         N36491 N36087  1.43K TC=0,0 
+R_R9         N36087 N36097  301 TC=0,0 
+X_U1         N35941 N36167 VCC 0 N36167 uA741
+R_R7         N36483 N36491  1k TC=0,0 
+V_V1         VCC 0 14V
+R_R2         VCC N36689  10.5k TC=0,0 
+R_R4         N36823 0  1.54K TC=0,0 
+R_R6         N361310 N36179  301 TC=0,0 
+R_R17         N35977 N37147  6650 TC=0,0 
+R_Relay         N37039 VCC  480 TC=0,0 
+R_R12         N36339 VCC  4.12K TC=0,0 
+X_U3         N36689 N36483 VCC 0 N36483 uA741
+R_R16         N36983 VCC  590 TC=0,0 
+X_U2         N36179 N36491 VCC 0 N36087 uA741
+R_Rsesnsor         N35941 0  {Rs} TC=0,0 
+D_led         N36983 N37039 LS_3336-TYP 
+R_R18         VCC N35941  75k TC=0,0 
+R_R5         N36167 N361310  287 TC=0,0 
+V_V3         N36555 0  
++PULSE 0 14 0 10m 10m 0 20m
+R_R11         N35971 N35977  1k TC=0,0 
+Q_Q2         N37039 N37147 0 Q2N2222A/ZTX 
+R_R14         N36511 N36641  4.75K TC=0,0 
+X_U4         N35971 N36511 VCC 0 N35977 uA741
+R_R15         N36641 0  2.8K TC=0,0 
+R_R3         N36689 N36823  1.96K TC=0,0 
+R_R10         N36097 N35971  274 TC=0,0 
+.PARAM  rs=75k
+
+**** RESUMING "Resistive Sensor Simulation.cir" ****
+.END
+
+**** 05/23/24 07:28:46 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Resistive Sensor Simulation"  [ c:\users\lenovo\appdata\roaming\spb_data\cdssetup\workspace\projects\final g
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               LS_3336-TYP     X_U1.dx         X_U1.dy         X_U3.dx         
+          IS  980.130000E-24  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.6749                                                       
+         IKF    7.140200E-03                                                 
+          RS    1.6217          1               1.000000E-03    1            
+         CJO                                   10.000000E-12                 
+
+
+               X_U3.dy         X_U2.dx         X_U2.dy         X_U4.dx         
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U4.dy         
+          IS  800.000000E-18 
+          RS    1.000000E-03 
+         CJO   10.000000E-12 
+
+
+**** 05/23/24 07:28:46 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Resistive Sensor Simulation"  [ c:\users\lenovo\appdata\roaming\spb_data\cdssetup\workspace\projects\final g
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Q2N2222A/ZTX    X_U1.qx         X_U3.qx         X_U2.qx         
+               NPN             NPN             NPN             NPN             
+       LEVEL    1               1               1               1            
+          IS   30.611000E-15  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  220              93.75           93.75           93.75         
+          NF    1.00124         1               1               1            
+         VAF  104                                                            
+         IKF     .52                                                         
+         ISE    7.500000E-15                                                 
+          NE    1.41                                                         
+          BR    4               1               1               1            
+          NR    1.005           1               1               1            
+         VAR   28                                                            
+         IKR     .24                                                         
+         ISC   10.652500E-12                                                 
+          NC    1.3728                                                       
+         ISS    0               0               0               0            
+          RB     .13                                                         
+          RE     .22            0               0               0            
+          RC     .12            0               0               0            
+         CJE   27.010000E-12    0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    9.120000E-12    0               0               0            
+         VJC     .4089           .75             .75             .75         
+         MJC     .3508           .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          TF  325.000000E-12                                                 
+          TR  100.000000E-09                                                 
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.42            2.42         
+           D     .87             .87             .87             .87         
+
+
+               X_U4.qx         
+               NPN             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF   93.75         
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+
+          JOB CONCLUDED
+
+**** 05/23/24 07:28:46 ***** PSpice 23.1.0 (6 March 2024) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Resistive Sensor Simulation"  [ c:\users\lenovo\appdata\roaming\spb_data\cdssetup\workspace\projects\final g
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

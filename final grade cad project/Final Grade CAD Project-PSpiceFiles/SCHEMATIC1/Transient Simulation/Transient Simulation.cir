@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-Transient Simulation"  [ C:\Users\Lenovo\AppData\Roaming\SPB_Data\cdssetup\workspace\projects\final grade cad project\final grade cad project-pspicefiles\schematic1\transient simulation.sim ] 
+
+** Creating circuit file "Transient Simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Lenovo\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 20m 0 20u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

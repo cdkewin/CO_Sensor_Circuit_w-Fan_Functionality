@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-Resistive Sensor Simulation"  [ c:\users\lenovo\appdata\roaming\spb_data\cdssetup\workspace\projects\final grade cad project\Final Grade CAD Project-PSpiceFiles\SCHEMATIC1\Resistive Sensor Simulation.sim ] 
+
+** Creating circuit file "Resistive Sensor Simulation.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\Lenovo\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\23.1.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM Rs 20K 80K 1K 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

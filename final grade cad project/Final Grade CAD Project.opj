@@ -1,0 +1,101 @@
+(ExpressProject "Final Grade CAD Project"
+  (ProjectVersion "19981106")
+  (SoftwareVersion "23.1 S003 (4178961)  [3/6/2024]-[05/26/24]")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library")
+    ("Allegro Netlist Directory" "allegro")
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420")
+    (NoModify)
+    (File ".\final grade cad project.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File
+       "C:\USERS\LENOVO\APPDATA\ROAMING\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\FINAL GRADE CAD PROJECT\FINAL GRADE CAD PROJECT.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File
+       "C:\USERS\LENOVO\APPDATA\ROAMING\SPB_DATA\CDSSETUP\WORKSPACE\PROJECTS\FINAL GRADE CAD PROJECT\FINAL GRADE CAD PROJECT.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Layout")
+  (Folder "Outputs"
+    (File ".\final grade cad project.bom"
+      (Type "Report"))
+    (File ".\final grade cad project-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (Sort User)
+    (File ".\FINAL GRADE CAD PROJECT_OUTPUT\BOM.SCH.CSV"
+      (Type "Report")
+      (DisplayName ".\FINAL GRADE CAD PROJECT_OUTPUT\BOM.SCH.CSV")))
+  (Folder "Referenced Projects")
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\final grade cad project-pspicefiles\schematic1\transient simulation.sim"
+        (DisplayName "SCHEMATIC1-Transient Simulation")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\final grade cad project-pspicefiles\schematic1\resistive sensor simulation.sim"
+        (DisplayName "SCHEMATIC1-Resistive Sensor Simulation")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\final grade cad project-pspicefiles\schematic1\monte carlo.sim"
+        (DisplayName "SCHEMATIC1-Monte Carlo")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\final grade cad project-pspicefiles\schematic1\worst case.sim"
+        (DisplayName "SCHEMATIC1-Worst case")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\final grade cad project-pspicefiles\schematic1\performace analysis.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\final grade cad project-pspicefiles\schematic1\performace analysis.sim"
+        (DisplayName "SCHEMATIC1-Performace Analysis")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (Folder "Logs")
+  (PartMRUSelector)
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\Lenovo\Desktop\final grade cad project\final grade cad project.dsn")
+      (Path "Design Resources"
+         "C:\Users\Lenovo\Desktop\final grade cad project\final grade cad project.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\Lenovo\Desktop\final grade cad project\final grade cad project.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 517"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 5 1120 24 535")
+        (Scroll "642 40")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\LENOVO\DESKTOP\FINAL GRADE CAD PROJECT\FINAL GRADE CAD PROJECT.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "Lenovo"))
